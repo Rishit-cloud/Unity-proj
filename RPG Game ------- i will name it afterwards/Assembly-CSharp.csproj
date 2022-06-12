@@ -53,15 +53,17 @@
     <UnityVersion>2021.1.18f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Movement\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Core\FollowCamera.cs" />
+    <Compile Include="Assets\Scripts\Core\ActionScheduler.cs" />
     <Compile Include="Assets\Scripts\Movement\Mover.cs" />
     <Compile Include="Assets\Scripts\Combat\Fighter.cs" />
     <Compile Include="Assets\Scripts\Combat\CombatTarget.cs" />
-    <Compile Include="Assets\Scripts\Core\ActionScheduler.cs" />
+    <Compile Include="Assets\Scripts\Movement\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Core\IAction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
+    <None Include="Assets\Asset Packs\Animations by Explosive\README - Usage Rights for these assets 1.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -294,6 +296,9 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>D:\Unity\2021.1.18f\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.6.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
@@ -643,6 +648,9 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>D:\Unity\2021.1.18f\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -658,8 +666,20 @@
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="VSSettingsProvider">
+      <HintPath>Library\ScriptAssemblies\VSSettingsProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
@@ -672,6 +692,12 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
