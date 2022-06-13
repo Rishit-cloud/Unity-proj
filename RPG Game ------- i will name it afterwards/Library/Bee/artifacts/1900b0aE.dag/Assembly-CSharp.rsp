@@ -321,6 +321,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
 "Assets/Scripts/Combat/CombatTarget.cs"
 "Assets/Scripts/Combat/Fighter.cs"
+"Assets/Scripts/Combat/Health.cs"
 "Assets/Scripts/Core/ActionScheduler.cs"
 "Assets/Scripts/Core/FollowCamera.cs"
 "Assets/Scripts/Core/IAction.cs"

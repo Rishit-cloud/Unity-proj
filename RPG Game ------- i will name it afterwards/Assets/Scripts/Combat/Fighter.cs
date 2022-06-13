@@ -14,6 +14,7 @@ namespace RPG.Combat
         Animator animator;
         [SerializeField] float attackSpeed = 1;
         float timeSinceLastAttack = 0;
+        [SerializeField] float playerDamage = 20;
 
         void Start()
         {
@@ -54,10 +55,18 @@ namespace RPG.Combat
             {
                 if (timeSinceLastAttack > attackSpeed)
                 {
+                    // TakeDamage() metord is called in the Hit() event
                     animator.SetTrigger("isAttacking");
                     timeSinceLastAttack = 0;
                 }
             }
+        }
+
+        // this is a animation event
+        void Hit()
+        {
+            Health enemyHealth = target.GetComponent<Health>();
+            enemyHealth.TakeDamage(playerDamage);
         }
 
         private bool NewMethod()
@@ -74,12 +83,6 @@ namespace RPG.Combat
         public void Cancel()
         {
             target = null;
-        }
-
-        // this is a animation event
-        void Hit()
-        {
-            
         }
     }
 
